@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Wi-Fi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 50px;
+    }
+    .wifi-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display: inline-block;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wifi-box">
+    <h1>Free Wi-Fi</h1>
+    <p>Click below to connect!</p>
+    <button onclick="showPrank()">Connect</button>
+    <div id="prankImage" style="display:none;">
+      <img src="https://i.postimg.cc/8CF2CW7b/IMG-20260317-193803-092.jpg" alt="Surprise!">
+    </div>
+  </div>
+
+  <script>
+    function showPrank() {
+      document.getElementById('prankImage').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
